@@ -1,0 +1,39 @@
+
+=== 1. python syntax + protocol self-check ===
+  PASS  all python files compile:5 files
+  PASS  common.py protocol self-check (target/u32/nonce/gate math)
+  PASS  logging survives a hostile stdout (EOPNOTSUPP flush)
+
+=== 2. build + RandomX official test vector ===
+  PASS  build.sh
+  PASS  RandomX vector passes in light mode (via bin/rx_test)
+  PASS  engine auto-relocates when the filesystem denies exec
+
+=== 3. offline end-to-end: demo job -> mine -> shares.txt ===
+  PASS  demo job written (6 lines)
+  PASS  miner finished cleanly: SUMMARY engine=native mode=light hps=39.358 hashes=109 shares=1 runtime=2.8
+  PASS  shares.txt contains a share record
+  PASS  miner validated RandomX before hashing
+
+=== 4. independent re-hash of the produced share ===
+  PASS  verify_share.py exit 0 (hash reproduced + target satisfied)
+  verified: n=1 pass=1 fail=0
+  PASS  re-hash summary
+
+=== 5. file plumbing: repeated appends + rejection of corrupt data ===
+  25 appends parsed back correctly; job text round-trip OK
+  PASS  append/parse/round-trip plumbing
+  PASS  writes survive flush/fsync/flock failures (verified by read-back)
+  PASS  delete-and-rewrite fallback (append-hostile filesystems)
+  PASS  whole miner persists every share on an append-hostile filesystem
+
+=== 6. loopback: mock pool <-> bridge <-> miner (accept path, job rotation) ===
+  SKIP  loopback loop -- pool_bridge.py / tests/loopback_test.sh not present (offline subset)
+
+=== 7. differential share detection: native engine vs independent reference ===
+  PASS  agreement: reference=3 engine=3 missed=0 extra=0
+
+==============================================
+RESULT: 17 passed, 0 failed, 1 skipped
+offline suite: ALL GOOD
+==============================================

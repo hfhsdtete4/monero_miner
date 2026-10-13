@@ -1,0 +1,27 @@
+# Example share record (captured from tests/loopback_test.sh).
+# This record was independently re-hashed by the mock pool from the
+# blob + nonce below and accepted. `python3 verify_share.py` can check
+# any record in this format. Note the nonce is hex of the 4
+# LITTLE-ENDIAN bytes placed at blob offset 39.
+
+[share]
+job_id=mock-625f9db3
+algo=rx/0
+nonce=8300004e
+nonce_u32=1308622979
+result=fac58650c07d95207a837ec08a8cc6617a82796fb8279a958f2e9d12993e5700
+target=ffffffff
+target_u32=4294967295
+diff=751.176000
+height=3165932
+seed=f9d8b5aa745a912e4d95e64d5c01a925ae628bbdb6e6b3977a150a395d82e52c
+blob=2e0244311a8148f8b7c21b8c6a4636a744eb43fc2b534a90cfeff5160716659a7c8b7ee932fbf88300004e01522654692deea1a3a9d04ba99f51b70772f2f684fb7899fd26128c93cdb4ec042d30c2af474bc9a1
+url=127.0.0.1:44897
+user=testwallet
+nicehash=0
+demo=0
+qualified=1
+engine=native
+ts=1791900666.044
+verified=1
+# submitted 1791900675.782

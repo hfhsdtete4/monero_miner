@@ -1,0 +1,20 @@
+# Example: a real job as written by pool_bridge.py after logging in to
+# xmr.kryptex.network:7029 (public block template data, captured live).
+# xmr-fileminer job file -- written atomically by pool_bridge.py/demo_job.py
+# The miner never talks to the network; it only reads this file.
+version=1
+algo=rx/0
+url=xmr.kryptex.network:7029
+user=krxYRPV4WQ
+job_id=14fc8216ca6d
+target=e2530000
+height=3783195
+seed=bee2f72da1c178a91304f3d93c9eb70deda3cbe0505e0ea5737644c1234008a3
+nicehash=0
+demo=0
+updated=1791900749.085
+
+# The exact block hashing blob the pool sent (pool's blob, nonce bytes relevant
+# [39..42] are overwritten by the miner per hash attempt).
+[blob]
+1010a1f8b8d60697dbf156e44dd0817c7e0f9a4efd17d434a7b682dc277b88764e1f5a5535ac5500000000d852f4ffeebaf8ad25e9c21a84cd62a43f0f9c71173f4912992447c9fe56dc5601
