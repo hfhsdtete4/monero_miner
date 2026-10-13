@@ -7,13 +7,13 @@ version=1
 algo=rx/0
 url=pool.hashvault.pro:443
 user=8453y3Wq5F9CkbhAckUyHHMgZTP69gPqNVCBa7qDSqDGMYmnrbKFGYg8qAnQVCtowq7v2UW4QLpf1GfiFJe5W8eyP7w3evB
-job_id=8mi6j-dt3y
+job_id=8mide-dt3y
 target=04e90000
-height=3783386
+height=3783387
 seed=bee2f72da1c178a91304f3d93c9eb70deda3cbe0505e0ea5737644c1234008a3
 nicehash=0
 demo=0
-updated=1791923876.871
+updated=1791923885.732
 # This rig's slice of the nonce space (assigned by the connector so
 # several rigs do not repeat each other's work).
 offset=0x00000000
@@ -22,4 +22,4 @@ span=0x100000000
 # The exact block hashing blob the pool sent (pool's blob, nonce bytes relevant
 # [39..42] are overwritten by the miner per hash attempt).
 [blob]
-1010a4adbad60681418c18d19d22052a5d0e2d30dc53fbbc4b108ecfe1e7f6fc05366b0e53995800000000f296ef329289c110fb7f93a562c6c13fcbd00c5f3cd5e723e1b455fe24abf4f267
+1010adadbad606d7dbf278eb4dcf95d3f33530bae4ff04426ddd9443630492ff873635c7ed62ae00000000eff0fe9f5971f1038b99b5de96acc15bdfd51f019c3631e009da40e5ba6e665a01
