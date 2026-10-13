@@ -1,0 +1,3 @@
+# miner 1 shares (miner 1/2: nonces 0x00000000..0x7FFFFFFF (50.0% of the space))
+# Upload that rig's shares.txt here (replace this line). One
+# [share] block per share, exactly as the miner writes them.
