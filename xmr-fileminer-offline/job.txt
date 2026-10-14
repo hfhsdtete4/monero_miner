@@ -1,21 +1,21 @@
 # ===== miner 1 of 1 -- this file is for THAT rig =====
 # Save it as job.txt in miner 1's folder. It scans miner 1/1: nonces 0x00000000..0xFFFFFFFF (100.0% of the space)
 # (the other rigs scan the rest of the space, so no work is repeated)
-# share difficulty 1.660M: raised to 1.660M (pool sent 72.000k)
-# at 8,300 H/s per rig: ~200s per share per rig, ~200s between share-file changes across 1 rig(s)
+# share difficulty 166.002k: raised to 166.002k (pool sent 72.000k)
+# at 830 H/s per rig: ~200s per share per rig, ~200s between share-file changes across 1 rig(s)
 # xmr-fileminer job file -- written atomically by pool_bridge.py/demo_job.py
 # The miner never talks to the network; it only reads this file.
 version=1
 algo=rx/0
 url=pool.hashvault.pro:443
 user=8453y3Wq5F9CkbhAckUyHHMgZTP69gPqNVCBa7qDSqDGMYmnrbKFGYg8qAnQVCtowq7v2UW4QLpf1GfiFJe5W8eyP7w3evB
-job_id=g85g6-2f881
-target=1b0a0000
+job_id=gaa9t-2f88n
+target=11650000
 height=3783570
 seed=bee2f72da1c178a91304f3d93c9eb70deda3cbe0505e0ea5737644c1234008a3
 nicehash=0
 demo=0
-updated=1791946725.442
+updated=1791946885.560
 # This rig's slice of the nonce space (assigned by the connector so
 # several rigs do not repeat each other's work).
 offset=0x00000000
@@ -24,4 +24,4 @@ span=0x100000000
 # The exact block hashing blob the pool sent (pool's blob, nonce bytes relevant
 # [39..42] are overwritten by the miner per hash attempt).
 [blob]
-1010e6dfbbd60690846010e4e6c965b29caaef4706012b7ce4b905058cd57087d9eb8f58efcedf00000000d6df5d364be5e8bac3f32e1d1a6ba1c972918b73c204083807be53579cc6362225
+101080e1bbd60690846010e4e6c965b29caaef4706012b7ce4b905058cd57087d9eb8f58efcedf00000000b7991f6ab3e0b253045962b922be2469dad06b12be9e9c2a3d368410e14f09514e
